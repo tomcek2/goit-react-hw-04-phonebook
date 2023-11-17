@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { nanoid } from 'nanoid';
+import css from './ContactInput.module.css';
 
 export const ContactInput = ({ onAddContact }) => {
   const [name, setName] = useState('');
@@ -23,9 +24,10 @@ export const ContactInput = ({ onAddContact }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label>
+      <label className={css.newContact}>
         Name:
         <input
+          className={css.newContactInput}
           type="text"
           name="name"
           pattern="^[a-zA-Zа-яА-Я]+(([' -][a-zA-Zа-яА-Я ])?[a-zA-Zа-яА-Я]*)*$"
