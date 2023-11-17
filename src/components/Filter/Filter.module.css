@@ -4,3 +4,7 @@
   padding: 10px 0;
   gap: 10px;
 }
+
+.filterInput {
+  width: 200px;
+}

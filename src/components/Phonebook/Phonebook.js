@@ -17,6 +17,15 @@ export const Phonebook = () => {
   const [filter, setFilter] = useState('');
 
   const handleAddContact = newContact => {
+    if (
+      contacts.some(
+        contact => contact.name.toLowerCase() === newContact.name.toLowerCase()
+      )
+    ) {
+      alert(`${newContact.name} is already in contacts.`);
+      return;
+    }
+
     setContacts(prevContacts => [...prevContacts, newContact]);
   };
 
