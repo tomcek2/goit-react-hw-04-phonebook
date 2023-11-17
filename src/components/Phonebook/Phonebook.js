@@ -37,6 +37,12 @@ export const Phonebook = () => {
     contact.name.toLowerCase().includes(filter.toLowerCase())
   );
 
+  const handleDeleteContact = id => {
+    setContacts(prevContacts =>
+      prevContacts.filter(contact => contact.id !== id)
+    );
+  };
+
   return (
     <div>
       <h1>Phonebook</h1>
@@ -48,7 +54,10 @@ export const Phonebook = () => {
         setNumber={setNumber}
       />
       <Filter filter={filter} onFilterChange={handleFilterChange} />
-      <ContactList contacts={filteredContacts} />
+      <ContactList
+        contacts={filteredContacts}
+        onDeleteContact={handleDeleteContact}
+      />
     </div>
   );
 };
