@@ -17,27 +17,27 @@ telefonicznych.
 - **Usuwanie Kontaktów:** Każdy kontakt wyświetla przycisk "Delete", który
   umożliwia użytkownikowi usunięcie danego kontaktu z książki telefonicznej.
 
-## Uruchomienie lokalnie
+## Instalacja
 
 Aby uruchomić tę aplikację lokalnie, wykonaj następujące kroki:
 
 1. Sklonuj repozytorium:
 
-   ```bash
+   ```shell
    git clone https://github.com/tomcek2/goit-react-hw-02-phonebook.git
    ```
 
 2. Zainstaluj zależności:
 
-   ```bash
+   ```shell
    npm install
    ```
 
-3. Uruchom aplikację:
+## Uruchomienie
 
-   ```bash
-   npm start
-   ```
+```shell
+npm start
+```
 
 ## Struktura Katalogów
 
