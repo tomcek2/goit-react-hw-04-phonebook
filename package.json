@@ -2,7 +2,7 @@
   "name": "react-homework-template",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://tomcek2.github.io/goit-react-hw-02-phonebookdepcheck/",
+  "homepage": "https://tomcek2.github.io/goit-react-hw-03-phonebook/",
   "dependencies": {
     "components": "^0.1.0",
     "nanoid": "^5.0.3",

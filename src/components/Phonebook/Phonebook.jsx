@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { ContactInput } from 'components/ContactInput/ContactInput';
 import { ContactList } from 'components/ContactList/ContactList';
 import { Filter } from 'components/Filter/Filter';
+import { useLocalStorage } from 'components/useLocalStorage/useLocalStorage';
 
 export const Phonebook = () => {
   const initialContacts = [
@@ -11,7 +12,7 @@ export const Phonebook = () => {
     { id: 'id-4', name: 'Annie Copeland', number: '227-91-26' },
   ];
 
-  const [contacts, setContacts] = useState(initialContacts);
+  const [contacts, setContacts] = useLocalStorage('contacts', initialContacts);
   const [name, setName] = useState('');
   const [number, setNumber] = useState('');
   const [filter, setFilter] = useState('');
