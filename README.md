@@ -38,16 +38,16 @@ Aby uruchomić tę aplikację lokalnie, wykonaj następujące kroki:
 
 ## Uruchomienie
 
-```shell
-npm start
-```
+1. Aby uruchomić:
+
+   ```shell
+   npm start
+   ```
 
 ## Struktura Katalogów
 
 - src: Zawiera kod źródłowy aplikacji React.
 - components: Komponenty aplikacji (ContactInput, ContactList, Filter).
-- useLocalStorage.js: Generyczny hook do przechowywania danych w lokalnym
-  magazynie.
 - Phonebook: Główny komponent aplikacji.
 - index.js: Plik startowy aplikacji.
 
@@ -55,3 +55,7 @@ npm start
 
 - React
 - Nanoid (do generowania identyfikatorów)
+
+## Autor
+
+Tomek Cekała
